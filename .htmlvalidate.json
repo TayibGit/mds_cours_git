@@ -3,6 +3,7 @@
   "rules": {
     "void-style": "off",
     "no-inline-style": "off",
-    "no-raw-characters": "off"
+    "no-raw-characters": "off",
+    "doctype-style": "off"
   }
 }
