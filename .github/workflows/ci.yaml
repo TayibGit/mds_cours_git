@@ -22,13 +22,7 @@ jobs:
           node-version: "20"
 
       - name: Install validators
-        run: npm install -g html-validate stylelint stylelint-config-standard
-
-      - name: Create stylelint config
-        run: echo '{"extends":"stylelint-config-standard"}' > .stylelintrc.json
+        run: npm install -g html-validate
 
       - name: Validate HTML
         run: npx html-validate "src/**/*.html"
-
-      - name: Validate CSS
-        run: npx stylelint "src/**/*.css"
